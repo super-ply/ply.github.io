@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://super-ply.github.io/ply.github.io</id>
     <title>Gridea</title>
-    <updated>2021-01-14T12:38:33.316Z</updated>
+    <updated>2021-01-14T12:41:18.123Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://super-ply.github.io/ply.github.io"/>
     <link rel="self" href="https://super-ply.github.io/ply.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://super-ply.github.io/ply.github.io/images/avatar.png</logo>
     <icon>https://super-ply.github.io/ply.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[这是我第一篇文档]]></title>
+        <id>https://super-ply.github.io/ply.github.io/post/zhe-shi-wo-di-yi-pian-wen-dang/</id>
+        <link href="https://super-ply.github.io/ply.github.io/post/zhe-shi-wo-di-yi-pian-wen-dang/">
+        </link>
+        <updated>2021-01-14T12:40:09.000Z</updated>
+        <content type="html"><![CDATA[<p>这是我第一篇文档，尝试一下！🤡🤡🤡<img src="https://super-ply.github.io/ply.github.io/post-images/1610628059054.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://super-ply.github.io/ply.github.io/post/hello-gridea/</id>
