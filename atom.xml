@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://super-ply.github.io/ply.github.io</id>
     <title>彭羊羊的个人学习网站</title>
-    <updated>2021-01-20T11:43:32.840Z</updated>
+    <updated>2021-01-20T11:55:42.476Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://super-ply.github.io/ply.github.io"/>
     <link rel="self" href="https://super-ply.github.io/ply.github.io/atom.xml"/>
@@ -11,12 +11,19 @@
     <icon>https://super-ply.github.io/ply.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 彭羊羊的个人学习网站</rights>
     <entry>
-        <title type="html"><![CDATA[这是我第一篇文档]]></title>
+        <title type="html"><![CDATA[这是我的第一个博客]]></title>
         <id>https://super-ply.github.io/ply.github.io/post/zhe-shi-wo-di-yi-pian-wen-dang/</id>
         <link href="https://super-ply.github.io/ply.github.io/post/zhe-shi-wo-di-yi-pian-wen-dang/">
         </link>
         <updated>2021-01-14T12:40:09.000Z</updated>
-        <content type="html"><![CDATA[<p>这是我第一篇文档，尝试一下！🤡🤡🤡!</p>
+        <summary type="html"><![CDATA[<p>🤡🤡🤡<br>
+这是我的第一个博客站点，</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>🤡🤡🤡<br>
+这是我的第一个博客站点，</p>
+<!-- more -->
+<p>由于本人是个技术渣又懒，所以用的是这款Gridea工具，亲测很好用，感兴趣的朋友可以查看上一篇官网文章，搭建过程十分简单。以后会不定期的在这里发布一些日常生活和学习日志，感兴趣的朋友可以关注一下，谢谢！😛😛😛<br>
+<img src="https://super-ply.github.io/ply.github.io/post-images/1611143414431.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
@@ -25,13 +32,12 @@
         <link href="https://super-ply.github.io/ply.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<p>✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
+<a href="https://github.com/getgridea/gridea">Github</a><br>
 <a href="https://gridea.dev/">Gridea 主页</a><br>
 <a href="http://fehey.com/">示例网站</a></p>
 <h2 id="特性">特性👇</h2>
