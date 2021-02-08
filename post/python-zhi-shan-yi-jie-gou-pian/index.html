@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Python之禅（一）：结构篇 | 彭羊羊的个人学习网站</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://super-ply.github.io/ply.github.io/favicon.ico?v=1612407730264">
+<link rel="stylesheet" href="https://super-ply.github.io/ply.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+在我们的项目开始之际，第一件做的事不应该是急着码代码堆，而是应该设计好我们的项目结构。没有一个好的项目结构，就急着去堆代码的话，码着码着你就会发现项目变成了一堆“屎山”🤧🤧🤧。所以我们要学会利用Python的特性来创造简洁、高效的代..." />
+    <meta name="keywords" content="python,规范,模块化" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://super-ply.github.io/ply.github.io">
+        <img src="https://super-ply.github.io/ply.github.io/images/avatar.png?v=1612407730264" class="site-logo">
+        <h1 class="site-title">彭羊羊的个人学习网站</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://super-ply.github.io/ply.github.io" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://super-ply.github.io/ply.github.io/tags" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://super-ply.github.io/ply.github.io/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://super-ply.github.io/ply.github.io" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/super-ply?tab=repositories" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      独立思考，知行合一
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://super-ply.github.io/ply.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Python之禅（一）：结构篇</h2>
+            <div class="post-date">2021-02-02</div>
+            
+              <div class="feature-container" style="background-image: url('https://super-ply.github.io/ply.github.io/post-images/python-zhi-shan-yi-jie-gou-pian.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <!-- more -->
+<p>在我们的项目开始之际，第一件做的事不应该是急着码代码堆，而是应该设计好我们的项目结构。没有一个好的项目结构，就急着去堆代码的话，码着码着你就会发现项目变成了一堆“屎山”🤧🤧🤧。所以我们要学会利用Python的特性来创造简洁、高效的代码。项目需要哪些功能？哪些模块？数据在项目中如何流转？功能模块之间是怎样的联系？我们可以先列一个大致的规划，从而帮我们理清我们的开发思路和确定最终的产品形态。如果你自己缺乏这方面的经验和知识，没有关系，我将带你了解如何优雅的构建你的工程项目，本篇文章我先来介绍一下一个规范的仓库结构应该包含哪些内容。</p>
+<p>仓库的结构是工程结构中重要的一部分，如果你的仓库目录一团糟，没有清晰的结构，只有一堆的文件且没有任何的说明，这只会使你和你的同事耗费更多的时间在理解寻找你的模块上，事倍功半。好的仓库结构应该包含以下内容：</p>
+<ul>
+<li>
+<p>License(./License.txt)：许可说明和授权。如果你经常去github上浏览一些优秀项目的话，你会发现在他们的项目根目录会有一个License授权文件，这是作者用来作为版权许可的声明。如果我们 Copy 了别人的代码或者文字同时没注意这些的话，在国外法律意识特别强的环境下，我们的作品会因触犯别人的权益而违法。<code>开源不等于免费，开源也不等于没有约束！！！</code></p>
+</li>
+<li>
+<p>Readme.md(./Readme.md):是对项目的一个说明介绍。它应该包含的有：</p>
+<ul>
+<li>项目的定位、项目的基本功能</li>
+<li>代码的运行方法：安装环境和启动命令等</li>
+<li>简要的使用说明</li>
+<li>代码的目录结构说明，甚至可以详细的说下软件的基本原理</li>
+<li>常见的问题说明</li>
+</ul>
+</li>
+<li>
+<p>Documation（./docs/）: 依赖包的参考文档。这没什么好说的，追求规范的话就加上。</p>
+</li>
+<li>
+<p>test_xxx.py (./tests/ ) : 存放测试程序文件。存放单元测试、接口测试等测试文件。</p>
+</li>
+<li>
+<p>setup.py(./setup.py) : 打包和发布管理文件。即程序启动入口。</p>
+</li>
+<li>
+<p>examples.py(./examples/):存放具体的功能模块代码。这里就是具体的功能模块代码，具体分类是实际情况而定。</p>
+</li>
+</ul>
+<p>说完仓库结构，我再来说下代码结构问题。现如今，规范优雅的代码风格和结构已成为了一个考量程序员是否合格的标准之一。对代码结构如此严格要求归根到底就因为<code>&quot;代码是给人看的，顺便给机器运行一下&quot;</code>,好的代码结构能让人一目了然，心情愉悦。</p>
+<p>得益于Python提供的导入与管理模块的方式，我们结构化Python项目就变得相对简单。而这带来的坏处也很明显，就是它的结构化容易做的很糟糕。糟糕的结构往往有以下几种特征：</p>
+<ul>
+<li>多重且混乱的依赖关系：类与类之间存在循环相互调用现象。这种情况，万不得已的时候要学会在函数或者方法内部使用import语句</li>
+<li>隐含耦合：类与类之间耦合性太强。你可能改动一个类会导致二三十条用例发生变化，牵一发而动全身，动弹不得。</li>
+<li>大量使用全局变量：不同的模块都可以自由的访问全局变量，可能会导致全局变量的不可预知性，容易发生可怕的错误，特别是在多线程的程序中。</li>
+<li>面条式代码：多重嵌套的if语句和 for循环，包含大量的复制粘贴的过程代码，没有明确的逻辑模块分割。</li>
+<li>混沌代码：一段代码中出现上百段相似的逻辑碎片，这类通常都是缺乏合适结构的类和对象。</li>
+</ul>
+<p>在一个健康的开发周期中，代码风格，API设计和自动化是非常关键的，因此一定要注意代码的结构。</p>
+<p>独立思考，知行合一，写出最好最优美的代码是我的宗旨，我们下期再见！</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://super-ply.github.io/ply.github.io/tag/QQcI6FTeN/" class="tag">
+                    python
+                  </a>
+                
+                  <a href="https://super-ply.github.io/ply.github.io/tag/Z8oAdcyVcb/" class="tag">
+                    规范
+                  </a>
+                
+                  <a href="https://super-ply.github.io/ply.github.io/tag/yUXf9A8Q__/" class="tag">
+                    模块化
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://super-ply.github.io/ply.github.io/post/android-log-qian-tan/">
+                  <h3 class="post-title">
+                    Android Log 浅谈
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
