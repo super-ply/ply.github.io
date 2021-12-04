@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>基于图像识别的自动化测试工具：网易Airtest | 彭羊羊的个人学习网站</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://super-ply.github.io/ply.github.io/favicon.ico?v=1638600095579">
+<link rel="stylesheet" href="https://super-ply.github.io/ply.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="2.1、下载airtestIDE
+直接官网下载对应平台的包：http://airtest.netease.com/
+2.2、连接手机
+官方文档：https://airtest.doc.io.netease.com/IDEdocs/devic..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://super-ply.github.io/ply.github.io">
+        <img src="https://super-ply.github.io/ply.github.io/images/avatar.png?v=1638600095579" class="site-logo">
+        <h1 class="site-title">彭羊羊的个人学习网站</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://super-ply.github.io/ply.github.io" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://super-ply.github.io/ply.github.io/tags" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://super-ply.github.io/ply.github.io/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://super-ply.github.io/ply.github.io" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/super-ply?tab=repositories" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      独立思考，知行合一
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://super-ply.github.io/ply.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">基于图像识别的自动化测试工具：网易Airtest</h2>
+            <div class="post-date">2021-05-12</div>
+            
+              <div class="feature-container" style="background-image: url('https://super-ply.github.io/ply.github.io/post-images/ji-yu-tu-xiang-shi-bie-de-zi-dong-hua-ce-shi-gong-ju-wang-yi-airtest.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>2.1、下载airtestIDE<br>
+直接官网下载对应平台的包：http://airtest.netease.com/<br>
+2.2、连接手机<br>
+官方文档：https://airtest.doc.io.netease.com/IDEdocs/device_connection/1_android_phone_connection/<br>
+2.2.1、android连接<br>
+4种连接方式：真机usb连接、远程连接、无线连接、代码连接<br>
+以上连接方式都要开启USB调试。一般都在开发者选项---》usb调试<br>
+有的手机没有开发者选项，需要打开隐藏开关。如华为，连点8次关于手机，就会出来开发者选项</p>
+<p>真机usb连接：<br>
+手机跟电脑用线连接起来<br>
+手机开启开发者选项---&gt;USB调试<br>
+点击连接面板中的 refresh ADB 按钮，设备列表将会刷新，<br>
+点击列表内对应设备的 Connect 完成连接，<br>
+远程连接：<br>
+已知IP和端口的远程设备 ip:port，AirtestIDE可以直接连接，<br>
+点开设备窗内的 远程设备连接 按钮<br>
+将 adb connect ip:port 字段填入填充框内，点击 连接 按钮，<br>
+远程设备将出现在设备列表中，点击 connect按钮。<br>
+无线连接：<br>
+确保手机开启了USB调试选项，并先用USB线将手机和电脑连接起来<br>
+在电脑端执行命令 adb tcpip 5555 ，其中 5555 是端口号，可以根据自己的需求来指定，5555是默认值<br>
+获取手机的IP地址，可以在 手机设置-关于手机-状态信息-IP地址 里找到，也可以执行 adb ifconfig来查看<br>
+随后可以拔掉USB线，在AirtestIDE的 远程设备连接 处输入 adb connect 手机ip:刚才填入的端口号5555 ，点击连接，刷新ADB后就能在设备列表中看到连上的设备了<br>
+如果因为网络波动、重启ADB等原因导致连接断开，重新执行一次 adb connect ip:port 即可。<br>
+　　注意：</p>
+<p>1更换一个网络环境需要使用新IP重新connect即可。<br>
+　　　　2但是如果手机重启了，就需要重新连接数据线再次开启端口。<br>
+　　　　3开启端口可以通过adb，也可以直接在手机上打开，但一般需要root权限和特殊软件。<br>
+在代码中连接：<br>
+如果在代码中/脚本运行时，需要填写Android:/// 字符串，又不清楚远程连接的手机应该如何填写的话，可以直接用AirtestIDE运行一次脚本，然后将IDE生成的 Android:/// 字符串复制使用。<br>
+字符串需要填写的内容为 Android://adbhost:adbport/serialno ，其中，adbhost和adbport一般来说默认都是本机adb，即 127.0.0.1:5037 ，在远程连接手机时，与本地手机不同的是设备号serialno</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://super-ply.github.io/ply.github.io/post/java-xue-xi-lu-xian/">
+                  <h3 class="post-title">
+                    Java 学习路线
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

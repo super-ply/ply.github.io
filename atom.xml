@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://super-ply.github.io/ply.github.io</id>
     <title>彭羊羊的个人学习网站</title>
-    <updated>2021-02-08T03:46:10.618Z</updated>
+    <updated>2021-12-04T06:45:11.467Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://super-ply.github.io/ply.github.io"/>
     <link rel="self" href="https://super-ply.github.io/ply.github.io/atom.xml"/>
@@ -10,6 +10,91 @@
     <logo>https://super-ply.github.io/ply.github.io/images/avatar.png</logo>
     <icon>https://super-ply.github.io/ply.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 彭羊羊的个人学习网站</rights>
+    <entry>
+        <title type="html"><![CDATA[Ideal  快捷键大全]]></title>
+        <id>https://super-ply.github.io/ply.github.io/post/ideal-kuai-jie-jian-da-quan/</id>
+        <link href="https://super-ply.github.io/ply.github.io/post/ideal-kuai-jie-jian-da-quan/">
+        </link>
+        <updated>2021-11-30T02:34:49.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>psvm: public static void main(String[] args)</li>
+<li>System.out.println();</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于图像识别的自动化测试工具：网易Airtest]]></title>
+        <id>https://super-ply.github.io/ply.github.io/post/ji-yu-tu-xiang-shi-bie-de-zi-dong-hua-ce-shi-gong-ju-wang-yi-airtest/</id>
+        <link href="https://super-ply.github.io/ply.github.io/post/ji-yu-tu-xiang-shi-bie-de-zi-dong-hua-ce-shi-gong-ju-wang-yi-airtest/">
+        </link>
+        <updated>2021-05-12T15:30:39.000Z</updated>
+        <content type="html"><![CDATA[<p>2.1、下载airtestIDE<br>
+直接官网下载对应平台的包：http://airtest.netease.com/<br>
+2.2、连接手机<br>
+官方文档：https://airtest.doc.io.netease.com/IDEdocs/device_connection/1_android_phone_connection/<br>
+2.2.1、android连接<br>
+4种连接方式：真机usb连接、远程连接、无线连接、代码连接<br>
+以上连接方式都要开启USB调试。一般都在开发者选项---》usb调试<br>
+有的手机没有开发者选项，需要打开隐藏开关。如华为，连点8次关于手机，就会出来开发者选项</p>
+<p>真机usb连接：<br>
+手机跟电脑用线连接起来<br>
+手机开启开发者选项---&gt;USB调试<br>
+点击连接面板中的 refresh ADB 按钮，设备列表将会刷新，<br>
+点击列表内对应设备的 Connect 完成连接，<br>
+远程连接：<br>
+已知IP和端口的远程设备 ip:port，AirtestIDE可以直接连接，<br>
+点开设备窗内的 远程设备连接 按钮<br>
+将 adb connect ip:port 字段填入填充框内，点击 连接 按钮，<br>
+远程设备将出现在设备列表中，点击 connect按钮。<br>
+无线连接：<br>
+确保手机开启了USB调试选项，并先用USB线将手机和电脑连接起来<br>
+在电脑端执行命令 adb tcpip 5555 ，其中 5555 是端口号，可以根据自己的需求来指定，5555是默认值<br>
+获取手机的IP地址，可以在 手机设置-关于手机-状态信息-IP地址 里找到，也可以执行 adb ifconfig来查看<br>
+随后可以拔掉USB线，在AirtestIDE的 远程设备连接 处输入 adb connect 手机ip:刚才填入的端口号5555 ，点击连接，刷新ADB后就能在设备列表中看到连上的设备了<br>
+如果因为网络波动、重启ADB等原因导致连接断开，重新执行一次 adb connect ip:port 即可。<br>
+　　注意：</p>
+<p>1更换一个网络环境需要使用新IP重新connect即可。<br>
+　　　　2但是如果手机重启了，就需要重新连接数据线再次开启端口。<br>
+　　　　3开启端口可以通过adb，也可以直接在手机上打开，但一般需要root权限和特殊软件。<br>
+在代码中连接：<br>
+如果在代码中/脚本运行时，需要填写Android:/// 字符串，又不清楚远程连接的手机应该如何填写的话，可以直接用AirtestIDE运行一次脚本，然后将IDE生成的 Android:/// 字符串复制使用。<br>
+字符串需要填写的内容为 Android://adbhost:adbport/serialno ，其中，adbhost和adbport一般来说默认都是本机adb，即 127.0.0.1:5037 ，在远程连接手机时，与本地手机不同的是设备号serialno</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java 学习路线]]></title>
+        <id>https://super-ply.github.io/ply.github.io/post/java-xue-xi-lu-xian/</id>
+        <link href="https://super-ply.github.io/ply.github.io/post/java-xue-xi-lu-xian/">
+        </link>
+        <updated>2021-02-25T07:59:41.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://super-ply.github.io/ply.github.io/post-images/1625671787060.png" alt="" loading="lazy">一.学习路线<br>
+1.javase (java语言基础，基础语法和常用类库)<br>
+2.数据库<br>
+1.mysql<br>
+2.jdbc<br>
+3.前端<br>
+1.html<br>
+2.css<br>
+3.javascript<br>
+4.javaweb(后端)<br>
+1.先学servlet，在学jsp<br>
+5.web进阶<br>
+1.AJAX<br>
+2.JQuery<br>
+6.javaweb项目实战<br>
+基于servlet + JSP  + Mysql + JDBC + HTML + CSS + JS + JQUERY + AJAX 做一个web项目<br>
+7.SSM三大框架<br>
+Spring + SpringMVC + Mybatis<br>
+先学 Mybatis 再Spring 再SpringMVC<br>
+8.互联网分布式<br>
+Dubbo<br>
+MQ<br>
+redis<br>
+.......<br>
+9.分布式项目实战<br>
+需要一个企业级项目实战</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Python之禅（一）：结构篇]]></title>
         <id>https://super-ply.github.io/ply.github.io/post/python-zhi-shan-yi-jie-gou-pian/</id>
@@ -57,17 +142,6 @@
 </ul>
 <p>在一个健康的开发周期中，代码风格，API设计和自动化是非常关键的，因此一定要注意代码的结构。</p>
 <p>独立思考，知行合一，写出最好最优美的代码是我的宗旨，我们下期再见！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Android Log 浅谈]]></title>
-        <id>https://super-ply.github.io/ply.github.io/post/android-log-qian-tan/</id>
-        <link href="https://super-ply.github.io/ply.github.io/post/android-log-qian-tan/">
-        </link>
-        <updated>2021-01-25T02:45:55.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<p>一. Android 的层次架构<br>
-在讨论Android的log之前我想先</p>
 ]]></content>
     </entry>
     <entry>
