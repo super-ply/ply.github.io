@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://super-ply.github.io/ply.github.io</id>
     <title>彭羊羊的个人学习网站</title>
-    <updated>2021-12-04T09:01:34.037Z</updated>
+    <updated>2021-12-06T02:21:57.780Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://super-ply.github.io/ply.github.io"/>
     <link rel="self" href="https://super-ply.github.io/ply.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://super-ply.github.io/ply.github.io/images/avatar.png</logo>
     <icon>https://super-ply.github.io/ply.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 彭羊羊的个人学习网站</rights>
+    <entry>
+        <title type="html"><![CDATA[每日目标（12月）]]></title>
+        <id>https://super-ply.github.io/ply.github.io/post/mei-ri-mu-biao-12-yue/</id>
+        <link href="https://super-ply.github.io/ply.github.io/post/mei-ri-mu-biao-12-yue/">
+        </link>
+        <updated>2021-12-06T02:09:56.000Z</updated>
+        <content type="html"><![CDATA[<p>每日运动学习打卡：</p>
+<ol>
+<li>慢跑 0.5-1h</li>
+<li>leetcode  刷题5道</li>
+<li>java</li>
+<li>mysql</li>
+</ol>
+<p>12.6：</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Ideal  快捷键大全]]></title>
         <id>https://super-ply.github.io/ply.github.io/post/ideal-kuai-jie-jian-da-quan/</id>
