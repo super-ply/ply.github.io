@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://super-ply.github.io/ply.github.io</id>
     <title>彭羊羊的个人学习网站</title>
-    <updated>2021-12-13T02:25:04.797Z</updated>
+    <updated>2021-12-18T08:53:01.648Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://super-ply.github.io/ply.github.io"/>
     <link rel="self" href="https://super-ply.github.io/ply.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://super-ply.github.io/ply.github.io/images/avatar.png</logo>
     <icon>https://super-ply.github.io/ply.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 彭羊羊的个人学习网站</rights>
+    <entry>
+        <title type="html"><![CDATA[Spring 学习]]></title>
+        <id>https://super-ply.github.io/ply.github.io/post/spring-xue-xi/</id>
+        <link href="https://super-ply.github.io/ply.github.io/post/spring-xue-xi/">
+        </link>
+        <updated>2021-12-18T08:41:37.000Z</updated>
+        <content type="html"><![CDATA[<p>本次小练习就是完成上图中所有的功能接口：<br>
+其中涵盖的技术点有java、spring、mysql等，当前完成进度如下：<br>
+<img src="https://super-ply.github.io/ply.github.io/post-images/1639817507172.png" alt="" loading="lazy"><br>
+待全部完成后进行技术点实现细讲😀</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[每日目标（12月）]]></title>
         <id>https://super-ply.github.io/ply.github.io/post/mei-ri-mu-biao-12-yue/</id>
@@ -19,18 +31,19 @@
         <content type="html"><![CDATA[<p>每日运动学习打卡：</p>
 <ol>
 <li>慢跑 0.5-1h</li>
-<li>leetcode  刷题5道</li>
-<li>java</li>
-<li>mysql</li>
 </ol>
 <p>12.6：<br>
 慢跑✔️<br>
-<img src="https://super-ply.github.io/ply.github.io/post-images/1638790804735.jpg" alt="" loading="lazy"><br>
-leetcode  ✔️<br>
-java、数据库： 没时间了，明天补上🔴</p>
+<img src="https://super-ply.github.io/ply.github.io/post-images/1638790804735.jpg" alt="" loading="lazy"></p>
 <p>12.7：<br>
 慢跑✔️<br>
 <img src="https://super-ply.github.io/ply.github.io/post-images/1638881373554.jpg" alt="" loading="lazy"></p>
+<p>12.13：<br>
+慢跑✔️<br>
+<img src="https://super-ply.github.io/ply.github.io/post-images/1639815490374.jpg" alt="" loading="lazy"></p>
+<p>12.14：<br>
+慢跑✔️<br>
+<img src="https://super-ply.github.io/ply.github.io/post-images/1639815557283.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
